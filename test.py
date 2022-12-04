@@ -44,7 +44,7 @@ def findillegalchar(casnum):
             return char
 
 st.title('EM Bag Service Status Tracking')
-warehouse=sqlite3.connect(r'/Users/fengyangguo/Downloads/EMSearch.db')
+warehouse=sqlite3.connect(r'/EMSearch.db')
 chemicals = warehouse.cursor()
 whichcasno = st.text_input('Enter CAS number', value = '', max_chars = None, key = None, type = 'default', help = 'CAS号形如1336-21-6')
 if whichcasno!='':
