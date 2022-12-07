@@ -17,16 +17,23 @@ def run_query(query):
 # sheet_url = 'https://docs.google.com/spreadsheets/d/1Vj3lhdCPzZWvKXzA2RDRugx8wckHyp7u65maLDhSsPY/edit#gid=0'
 
 # rows = run_query(f'SELECT * FROM "{sheet_url}"')
-def search(a1):
+def search(a1,a2):
     sheet_url = 'https://docs.google.com/spreadsheets/d/1Vj3lhdCPzZWvKXzA2RDRugx8wckHyp7u65maLDhSsPY/edit#gid=0'
     # a1 = str('{}'.format(name))
-    rows = run_query(f'SELECT * FROM "{sheet_url}" WHERE name = {a1}')
+    a1 = '{}'.format(a1)
+    a2 = '{}'.format(a2)
+
+    # rows = run_query(f'SELECT * FROM "{sheet_url}" WHERE name = "{a1}"')
+    rows = run_query(f'SELECT * FROM "{sheet_url}"')
     # Print results.
     print(rows)
     for row in rows:
-        st.write(f"{row.name} bag is :{row.status}:")
+        if f"{row.name}" == a1 and f"{row.num}" == a2:
+            st.write(f"{row.name} bag is :{row.status}:")
     # return rows
-whichcasno = st.text_input('Enter CAS number', value = '', max_chars = None, key = None, type = 'default', help = 'CAS号形如1336-21-6')
-st.write(whichcasno,'Service Staus is following:')
-query_test = search(whichcasno)
+whichcasno1 = st.text_input('Enter CAS number', value = '', max_chars = None, key = 1, type = 'default', help = 'CAS号形如1336-21-6')
+whichcasno2 = st.text_input('Enter CAS number', value = '', max_chars = None, key = 2, type = 'default', help = 'CAS号形如1336-21-6')
+
+st.write(whichcasno1,'Service Staus is following:')
+query_test = search(whichcasno1,whichcasno2)
 
