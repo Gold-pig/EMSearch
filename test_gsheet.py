@@ -31,8 +31,8 @@ def search(a1,a2):
         if f"{row.name}" == a1 and f"{row.num}" == a2:
             st.write(f"{row.name} bag is :{row.status}:")
     # return rows
-whichcasno1 = st.text_input('Enter CAS number', value = '', max_chars = None, key = 1, type = 'default', help = 'CAS号形如1336-21-6')
-whichcasno2 = st.text_input('Enter CAS number', value = '', max_chars = None, key = 2, type = 'default', help = 'CAS号形如1336-21-6')
+whichcasno1 = st.text_input('Enter First Name', value = '', max_chars = None, key = 1, type = 'default', help = 'Alice')
+whichcasno2 = st.text_input('Enter Order Num', value = '', max_chars = None, key = 2, type = 'default', help = 'R101')
 
 st.write(whichcasno1,'Service Staus is following:')
 query_test = search(whichcasno1,whichcasno2)
