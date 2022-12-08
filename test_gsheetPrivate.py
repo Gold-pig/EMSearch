@@ -38,7 +38,7 @@ def search(a1,a2):
     n = 0
     for row in rows:
         if f"{row.name}" == a1 and f"{row.num}" == a2:
-            st.write(f"{row.name} bag is :{row.status}:")
+            st.write(f"{row.name} bag is: {row.status}:")
             n+=1
     if n == 0:
         st.write(f"Not found")
