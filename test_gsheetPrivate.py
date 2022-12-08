@@ -43,15 +43,15 @@ def search(a1,a2):
     if n == 0:
         st.write(f"Not found")
 
-st.title('EM Bag Service Status Tracking')
 
+st.title('EM Bag Service Status Tracking')
+# st.subheader('This is a subheader')
 whichcasno1 = st.text_input('Enter First Name', value = '', max_chars = None, key = 1, type = 'default', help = 'Alice')
 whichcasno2 = st.text_input('Enter Order Num', value = '', max_chars = None, key = 2, type = 'default', help = 'R101')
 
-st.write('Your bag service staus is following:')
-query_test = search(whichcasno1,whichcasno2)
-
-
+if whichcasno1!='' and whichcasno2!='':
+    st.write('Your bag service staus is following:')
+    query_test = search(whichcasno1,whichcasno2)
 
 
 
