@@ -48,7 +48,7 @@ st.title('EM Bag Service Status Tracking')
 whichcasno1 = st.text_input('Enter First Name', value = '', max_chars = None, key = 1, type = 'default', help = 'Alice')
 whichcasno2 = st.text_input('Enter Order Num', value = '', max_chars = None, key = 2, type = 'default', help = 'R101')
 
-st.write(whichcasno1,'Service Staus is following:')
+st.write('Your bag service staus is following:')
 query_test = search(whichcasno1,whichcasno2)
 
 
