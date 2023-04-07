@@ -40,11 +40,11 @@ def search(a1,a2):
         if f"{row.name}" == a1 and f"{row.num}" == a2:
             st.write(f"{row.name} bag is: {row.status}:")
             sta = row.status
-            if sta == 1:
+            if int(sta[0]) == 1:
                 image = Image.open('mc.png')
                 st.image(image,caption='Mc')
                 print('1')
-            elif sta == 2:
+            elif int(sta[0]) == 2:
                 image = Image.open('mc.png')
                 st.image(image,caption='Mc')
                 print('2')
