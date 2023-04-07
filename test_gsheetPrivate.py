@@ -1,7 +1,7 @@
 import streamlit as st
 from gsheetsdb import connect
 from google.oauth2 import service_account
-
+from PIL import Image
 
 # Create a connection object.
 # conn = connect()
@@ -42,8 +42,12 @@ def search(a1,a2):
             sta = row.status
             if sta == 1:
                 print('1')
+                image = Image.open('mc.png')
+                st.image(image,caption='Mc')
             elif sta == 2:
                 print('2')
+                image = Image.open('mc.png')
+                st.image(image,caption='Mc')
             n+=1
     if n == 0:
         st.write(f"Not found")
