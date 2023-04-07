@@ -41,13 +41,14 @@ def search(a1,a2):
             st.write(f"{row.name} bag is: {row.status}:")
             sta = row.status
             if sta == 1:
+                image = Image.open('mc.png')
+                st.image(image,caption='Mc')
                 print('1')
-                image = Image.open('mc.png')
-                st.image(image,caption='Mc')
             elif sta == 2:
-                print('2')
                 image = Image.open('mc.png')
                 st.image(image,caption='Mc')
+                print('2')
+
             n+=1
     if n == 0:
         st.write(f"Not found")
