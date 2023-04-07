@@ -42,11 +42,11 @@ def search(a1,a2):
             sta = row.status
             if int(sta[0]) == 1:
                 image = Image.open('mc.png')
-                st.image(image,caption='Mc')
+                st.image(image,caption='')
                 print('1')
             elif int(sta[0]) == 2:
-                image = Image.open('mc.png')
-                st.image(image,caption='Mc')
+                image = Image.open('kfc.png')
+                st.image(image,caption='')
                 print('2')
 
             n+=1
