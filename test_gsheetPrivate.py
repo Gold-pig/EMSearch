@@ -39,6 +39,11 @@ def search(a1,a2):
     for row in rows:
         if f"{row.name}" == a1 and f"{row.num}" == a2:
             st.write(f"{row.name} bag is: {row.status}:")
+            sta = row.status
+            if sta == 1:
+                print('1')
+            elif sta == 2:
+                print('2')
             n+=1
     if n == 0:
         st.write(f"Not found")
