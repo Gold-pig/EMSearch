@@ -37,7 +37,7 @@ def search(a1,a2):
     print(rows)
     n = 0
     for row in rows:
-        if f"{row.name}" == a1 and int(float(f"{row.num}")) == a2:
+        if f"{row.name}" == a1 and f"{row.num}") == a2:
             st.write(f"{row.name} bag is: {row.status}:")
             #sta = row.status
             #if int(sta[0]) == 1:
