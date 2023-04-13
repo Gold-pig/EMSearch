@@ -34,7 +34,7 @@ def search(a1,a2):
     # rows = run_query(f'SELECT * FROM "{sheet_url}" WHERE name = "{a1}"')
     rows = run_query(f'SELECT * FROM "{sheet_url}"')
     # Print results.
-    # print(rows)
+    print(rows)
     n = 0
     for row in rows:
         if f"{row.name}" == a1 and f"{row.num}" == a2:
