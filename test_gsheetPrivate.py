@@ -39,6 +39,8 @@ def search(a1,a2):
     for row in rows:
         if f"{row.name}" == a1 and f"{row.num}" == a2:
             st.write(f"{row.name} bag is: {row.status}:")
+            row_ty = f"{row.num}"
+            print(row_ty.type())
             #sta = row.status
             #if int(sta[0]) == 1:
                 #image = Image.open('mc.png')
