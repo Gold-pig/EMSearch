@@ -16,7 +16,7 @@ credentials = service_account.Credentials.from_service_account_info(
     ],
 )
 conn = connect(credentials=credentials)
-@st.cache_resource(ttl=6)
+@st.cache_resource(ttl=600)
 
 def run_query(query):
     rows = conn.execute(query, headers=1)
@@ -39,15 +39,15 @@ def search(a1,a2):
     for row in rows:
         if f"{row.name}" == a1 and f"{row.num}" == a2:
             st.write(f"{row.name} bag is: {row.status}:")
-            sta = row.status
-            if int(sta[0]) == 1:
-                image = Image.open('mc.png')
-                st.image(image,caption='')
-                print('1')
-            elif int(sta[0]) == 2:
-                image = Image.open('kfc.png')
-                st.image(image,caption='')
-                print('2')
+            #sta = row.status
+            #if int(sta[0]) == 1:
+                #image = Image.open('mc.png')
+                #st.image(image,caption='')
+                #print('1')
+            #elif int(sta[0]) == 2:
+                #image = Image.open('kfc.png')
+                #st.image(image,caption='')
+                #print('2')
 
             n+=1
     if n == 0:
