@@ -41,15 +41,15 @@ def search(a1,a2):
             st.write(f"{row.name} bag is: {row.status}:")
             row_ty = f"{row.num}"
             print(type(row_ty))
-            #sta = row.status
-            #if int(sta[0]) == 1:
-                #image = Image.open('mc.png')
-                #st.image(image,caption='')
-                #print('1')
-            #elif int(sta[0]) == 2:
-                #image = Image.open('kfc.png')
-                #st.image(image,caption='')
-                #print('2')
+            sta = row.status
+            if int(sta[0]) == 1:
+                image = Image.open('1.png')
+                st.image(image,caption='')
+                print('1')
+            elif int(sta[0]) == 2:
+                image = Image.open('2.png')
+                st.image(image,caption='')
+                print('2')
 
             n+=1
     if n == 0:
