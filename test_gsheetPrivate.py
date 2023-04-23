@@ -49,22 +49,26 @@ def search(a1,a2):
                 st.image(image,width = 300)
                 print('1')
             elif sta == "EM BAG SPA_Reparaturstatus_2_reparaturinbearbeitung.png":
+                st.write(f"Your bag status is: Reparaturinbearbeitung")
                 image = Image.open('2.png')
                 st.image(image,width = 260)
             elif sta == "EM BAG SPA_Reparaturstatus_3_produktinqualitaetskontrolle.png":
+                st.write(f"Your bag status is: Produktinqualitaetskontrolle")
                 image = Image.open('3.png')
                 st.image(image,width = 260)
             elif sta == "EM BAG SPA_Reparaturstatus_4_auftragabgeschlossen.png":
+                st.write(f"Your bag status is: Auftragabgeschlossen")
                 image = Image.open('4.png')
                 st.image(image,width = 260)
             elif sta == "EM BAG SPA_Reparaturstatus_5_zurabholungbereit.png":
+                st.write(f"Your bag status is: Zurabholungbereit")
                 image = Image.open('5.png')
                 st.image(image,width = 260)
             
 
             n+=1
     if n == 0:
-        st.write(f"Not found")
+        st.write(f"Vielen Dank für Ihre Abfrage. Derzeit gibt es noch keinen Status zu Ihrer Reparatur. Bitte schauen Sie in wenigen Tagen noch einmal vorbei.")
 
 
 st.title('EM Bag Service Status Tracking')
