@@ -42,15 +42,24 @@ def search(a1,a2):
             row_ty = f"{row.num}"
             print(type(row_ty))
             sta = row.status
-            if int(sta[0]) == 1:
+            if sta[0] == "EM BAG SPA_Reparaturstatus_1_angeboterhalten.png":
                 st.write(f"Your bag status is: Angeboterhalten")
-                image = Image.open('1half.png')
-                st.image(image,caption='')
+                image = Image.open('1.png')
+                st.image(image,witdth = 260)
                 print('1')
-            elif int(sta[0]) == 2:
+            elif int(sta[0]) == "":
                 image = Image.open('2.png')
-                st.image(image,caption='')
-                print('2')
+                st.image(image,witdth = 260)
+            elif int(sta[0]) == "":
+                image = Image.open('3.png')
+                st.image(image,witdth = 260)
+            elif int(sta[0]) == "":
+                image = Image.open('4.png')
+                st.image(image,witdth = 260)
+            elif int(sta[0]) == "":
+                image = Image.open('5.png')
+                st.image(image,witdth = 260)
+            
 
             n+=1
     if n == 0:
