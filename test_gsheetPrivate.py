@@ -44,7 +44,7 @@ def search(a1,a2):
             sta = row.status
             if int(sta[0]) == 1:
                 st.write(f"Your bag status is: Angeboterhalten")
-                image = Image.open('1.png')
+                image = Image.open('1half.png')
                 st.image(image,caption='')
                 print('1')
             elif int(sta[0]) == 2:
