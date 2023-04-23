@@ -45,7 +45,7 @@ def search(a1,a2):
             print(sta)
             if sta == "EM BAG SPA_Reparaturstatus_1_angeboterhalten.png":
                 st.write(f"Your bag status is: Angeboterhalten")
-                image = Image.open('1.png')
+                image = Image.open('mc.png')
                 st.image(image,width = 300)
                 print('1')
             elif sta == "EM BAG SPA_Reparaturstatus_2_reparaturinbearbeitung.png":
