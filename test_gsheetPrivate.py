@@ -42,21 +42,22 @@ def search(a1,a2):
             row_ty = f"{row.num}"
             print(type(row_ty))
             sta = row.status
-            if sta[0] == "EM BAG SPA_Reparaturstatus_1_angeboterhalten.png":
+            print(sta)
+            if sta == "EM BAG SPA_Reparaturstatus_1_angeboterhalten.png":
                 st.write(f"Your bag status is: Angeboterhalten")
                 image = Image.open('1.png')
                 st.image(image,witdth = 260)
                 print('1')
-            elif int(sta[0]) == "":
+            elif sta == "EM BAG SPA_Reparaturstatus_2_reparaturinbearbeitung.png":
                 image = Image.open('2.png')
                 st.image(image,witdth = 260)
-            elif int(sta[0]) == "":
+            elif sta == "EM BAG SPA_Reparaturstatus_3_produktinqualitaetskontrolle.png":
                 image = Image.open('3.png')
                 st.image(image,witdth = 260)
-            elif int(sta[0]) == "":
+            elif sta == "EM BAG SPA_Reparaturstatus_4_auftragabgeschlossen.png":
                 image = Image.open('4.png')
                 st.image(image,witdth = 260)
-            elif int(sta[0]) == "":
+            elif sta == "EM BAG SPA_Reparaturstatus_5_zurabholungbereit.png":
                 image = Image.open('5.png')
                 st.image(image,witdth = 260)
             
