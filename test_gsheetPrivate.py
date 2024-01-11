@@ -83,7 +83,7 @@ whichcasno2 = st.text_input('Enter Order Num', value = '', max_chars = None, key
 
 if whichcasno1!='' and whichcasno2!='':
     #st.write('Your bag service staus is following:')
-    query_test = search(whichcasno1,whichcasno2)
+    query_test = search(whichcasno1,whichcasno2,whichcasno3)
 
 
 
