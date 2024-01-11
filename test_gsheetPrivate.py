@@ -46,25 +46,25 @@ def search(a1,a2,a3):
             print(type(row_ty))
             sta = row.status
             print(sta)
-            if sta == "EM BAG SPA_Reparaturstatus_1_angeboterhalten.png":
-                st.write(f"Your bag status is: Angeboterhalten")
-                image = Image.open('mc.png')
-                st.image(image,width = 300)
+            if sta == "1angeboterhalten":
+                st.write(f"Your bag status is:Angeboterhalten")
+                image = Image.open('1.png')
+                st.image(image,use_column_width = "auto")
                 print('1')
-            elif sta == "EM BAG SPA_Reparaturstatus_2_reparaturinbearbeitung.png":
+            elif sta == "2reparaturinbearbeitung":
                 st.write(f"Your bag status is: Reparaturinbearbeitung")
                 image = Image.open('2.png')
                 #st.image(image,width = 260)
                 st.image(image,use_column_width = "auto")
-            elif sta == "EM BAG SPA_Reparaturstatus_3_produktinqualitaetskontrolle.png":
+            elif sta == "3produktinqualitaetskontrolle":
                 st.write(f"Your bag status is: Produktinqualitaetskontrolle")
                 image = Image.open('3.png')
                 st.image(image, use_column_width = "auto")
-            elif sta == "EM BAG SPA_Reparaturstatus_4_auftragabgeschlossen.png":
+            elif sta == "4auftragabgeschlossen":
                 st.write(f"Your bag status is: Auftragabgeschlossen")
                 image = Image.open('4.png')
                 st.image(image, use_column_width = "auto")
-            elif sta == "EM BAG SPA_Reparaturstatus_5_zurabholungbereit.png":
+            elif sta == "5zurabholungbereit":
                 st.write(f"Your bag status is: Zurabholungbereit")
                 image = Image.open('5.png')
                 st.image(image, use_column_width = "auto")
