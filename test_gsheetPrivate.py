@@ -30,6 +30,9 @@ def search(a1,a2):
     a1 = a1.lower()
     a2 = '{}'.format(a2)
     a2 = a2.lower()
+    #last name
+    a3 = '{}'.format(a3)
+    a3 = a3.lower()
 
     # rows = run_query(f'SELECT * FROM "{sheet_url}" WHERE name = "{a1}"')
     rows = run_query(f'SELECT * FROM "{sheet_url}"')
@@ -37,7 +40,7 @@ def search(a1,a2):
     print(rows)
     n = 0
     for row in rows:
-        if f"{row.name}" == a1 and f"{row.num}" == a2:
+        if f"{row.name}" == a1 and f"{row.num}" == a2 and f"{row.lastname}" == a3:
             #st.write(f"{row.name} bag is: {row.status}:")
             row_ty = f"{row.num}"
             print(type(row_ty))
