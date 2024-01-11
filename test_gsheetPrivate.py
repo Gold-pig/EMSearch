@@ -40,7 +40,7 @@ def search(a1,a2,a3):
     print(rows)
     n = 0
     for row in rows:
-        if f"{row.name}" == a1 and f"{row.num}" == a2 and f"{row.lastname}" == a3:
+        if f"{row.name}" == a1 and f"{row.num}" == a2:
             #st.write(f"{row.name} bag is: {row.status}:")
             row_ty = f"{row.num}"
             print(type(row_ty))
