@@ -56,15 +56,15 @@ def search(a1,a2):
             elif sta == "EM BAG SPA_Reparaturstatus_3_produktinqualitaetskontrolle.png":
                 st.write(f"Your bag status is: Produktinqualitaetskontrolle")
                 image = Image.open('3.png')
-                st.image(image,width = 260)
+                st.image(image, use_column_width = "auto")
             elif sta == "EM BAG SPA_Reparaturstatus_4_auftragabgeschlossen.png":
                 st.write(f"Your bag status is: Auftragabgeschlossen")
                 image = Image.open('4.png')
-                st.image(image,width = 260)
+                st.image(image, use_column_width = "auto")
             elif sta == "EM BAG SPA_Reparaturstatus_5_zurabholungbereit.png":
                 st.write(f"Your bag status is: Zurabholungbereit")
                 image = Image.open('5.png')
-                st.image(image,width = 260)
+                st.image(image, use_column_width = "auto")
             
 
             n+=1
