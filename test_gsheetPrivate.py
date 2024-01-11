@@ -72,6 +72,7 @@ def search(a1,a2,a3):
 
             n+=1
     if n == 0:
+        print("Not found")
         st.write(f"Vielen Dank für Ihre Abfrage. Derzeit gibt es noch keinen Status zu Ihrer Reparatur. Bitte schauen Sie in wenigen Tagen noch einmal vorbei.")
 
 
