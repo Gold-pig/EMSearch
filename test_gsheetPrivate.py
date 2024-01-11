@@ -52,7 +52,7 @@ def search(a1,a2):
                 st.write(f"Your bag status is: Reparaturinbearbeitung")
                 image = Image.open('2.png')
                 #st.image(image,width = 260)
-                st.image(image,use_column_width = auto)
+                st.image(image,use_column_width = "auto")
             elif sta == "EM BAG SPA_Reparaturstatus_3_produktinqualitaetskontrolle.png":
                 st.write(f"Your bag status is: Produktinqualitaetskontrolle")
                 image = Image.open('3.png')
