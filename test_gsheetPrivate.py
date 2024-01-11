@@ -23,7 +23,7 @@ def run_query(query):
     rows = rows.fetchall()
     return rows
 
-def search(a1,a2):
+def search(a1,a2,a3):
     sheet_url = st.secrets["private_gsheets_url"]
     # a1 = str('{}'.format(name))
     a1 = '{}'.format(a1)
@@ -78,6 +78,7 @@ def search(a1,a2):
 st.title('EM Bag Service Status Tracking')
 # st.subheader('This is a subheader')
 whichcasno1 = st.text_input('Enter First Name', value = '', max_chars = None, key = 1, type = 'default', help = 'Alice')
+whichcasno3 = st.text_input('Enter Last Name', value = '', max_chars = None, key = 3, type = 'default', help = 'Alice')
 whichcasno2 = st.text_input('Enter Order Num', value = '', max_chars = None, key = 2, type = 'default', help = 'R101')
 
 if whichcasno1!='' and whichcasno2!='':
